@@ -12,6 +12,8 @@
 		04C7A99B21D3629E001FDE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C7A99921D3629E001FDE49 /* Main.storyboard */; };
 		04C7A99D21D362A0001FDE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C7A99C21D362A0001FDE49 /* Assets.xcassets */; };
 		04C7A9A021D362A0001FDE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C7A99E21D362A0001FDE49 /* LaunchScreen.storyboard */; };
+		04C7A9AD21D364D3001FDE49 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9AC21D364D3001FDE49 /* RadarView.swift */; };
+		04C7A9B021D36511001FDE49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9AF21D36511001FDE49 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		04C7A99C21D362A0001FDE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C7A99F21D362A0001FDE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C7A9A121D362A0001FDE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C7A9AC21D364D3001FDE49 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
+		04C7A9AF21D36511001FDE49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,64 @@
 		04C7A99421D3629E001FDE49 /* MiniRadar */ = {
 			isa = PBXGroup;
 			children = (
-				04C7A99521D3629E001FDE49 /* AppDelegate.swift */,
-				04C7A99721D3629E001FDE49 /* ViewController.swift */,
-				04C7A99921D3629E001FDE49 /* Main.storyboard */,
-				04C7A99C21D362A0001FDE49 /* Assets.xcassets */,
-				04C7A99E21D362A0001FDE49 /* LaunchScreen.storyboard */,
-				04C7A9A121D362A0001FDE49 /* Info.plist */,
+				04C7A9A721D363E1001FDE49 /* Supporting Files */,
+				04C7A9A821D363F6001FDE49 /* Resources */,
+				04C7A9A921D36400001FDE49 /* Sources */,
 			);
 			path = MiniRadar;
+			sourceTree = "<group>";
+		};
+		04C7A9A721D363E1001FDE49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A9A121D362A0001FDE49 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C7A9A821D363F6001FDE49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A9AA21D3644C001FDE49 /* Storyboards */,
+				04C7A99C21D362A0001FDE49 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04C7A9A921D36400001FDE49 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A99521D3629E001FDE49 /* AppDelegate.swift */,
+				04C7A9AB21D36484001FDE49 /* View Controllers */,
+				04C7A9AE21D36500001FDE49 /* Utility */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		04C7A9AA21D3644C001FDE49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A99921D3629E001FDE49 /* Main.storyboard */,
+				04C7A99E21D362A0001FDE49 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04C7A9AB21D36484001FDE49 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A99721D3629E001FDE49 /* ViewController.swift */,
+				04C7A9AC21D364D3001FDE49 /* RadarView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		04C7A9AE21D36500001FDE49 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				04C7A9AF21D36511001FDE49 /* Constants.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C7A99821D3629E001FDE49 /* ViewController.swift in Sources */,
+				04C7A9AD21D364D3001FDE49 /* RadarView.swift in Sources */,
 				04C7A99621D3629E001FDE49 /* AppDelegate.swift in Sources */,
+				04C7A9B021D36511001FDE49 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9E7V52UM47;
-				INFOPLIST_FILE = MiniRadar/Info.plist;
+				INFOPLIST_FILE = "MiniRadar/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9E7V52UM47;
-				INFOPLIST_FILE = MiniRadar/Info.plist;
+				INFOPLIST_FILE = "MiniRadar/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
