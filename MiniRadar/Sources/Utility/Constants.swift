@@ -10,7 +10,9 @@ import UIKit
 
 struct Constants {
     
-    static let numberOfCircles = 10
-    static let numberOfPlains = 10
+    static let numberOfCircles: Int = 10
+    static let numberOfAirplanes: Int = 100
+    
+    static let airplaneIndent: CGFloat = 1
     
 }
