@@ -23,7 +23,8 @@ class RadarView: UIView {
     }()
     
     private lazy var airplainWidth: CGFloat = {
-        return CGFloat.random(in: ((minRadius - Constants.airplaneIndent * 2)*2/3)...(minRadius - Constants.airplaneIndent * 2))
+        let maxWidth = minRadius - Constants.airplaneIndent * 2
+        return CGFloat.random(in: (maxWidth * 2/3)...maxWidth)
     }()
     
     override init(frame: CGRect) {
@@ -55,10 +56,11 @@ class RadarView: UIView {
     
     private func setupView() {
         self.backgroundColor = UIColor.clear
+        guard Constants.numberOfAirplanes > 0 else { return }
         for _ in 0..<Constants.numberOfAirplanes {
             let imageView = UIImageView(image: UIImage(named: "airplane"))
             imageView.contentMode = .scaleAspectFit
-            let randomRadarPoint = RandomRadarPoint(radarCenter: self.radarCenter, radarRadius: maxRadius, numberOfCircles: Constants.numberOfCircles, airplaneWidth: airplainWidth)
+            let randomRadarPoint = RandomRadarPointForAirplane(radarCenter: self.radarCenter, radarRadius: maxRadius, numberOfCircles: Constants.numberOfCircles, airplaneWidth: airplainWidth, airplaneIndent: Constants.airplaneIndent)
             imageView.frame = CGRect(x: randomRadarPoint.x - airplainWidth / 2,
                                      y: randomRadarPoint.y - airplainWidth / 2,
                                      width: airplainWidth,

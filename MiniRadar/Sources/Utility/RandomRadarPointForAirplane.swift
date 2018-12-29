@@ -1,5 +1,5 @@
 //
-//  RandomRadarPoint.swift
+//  RandomRadarPointForAirplane.swift
 //  MiniRadar
 //
 //  Created by Виктория Бадисова on 27/12/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RandomRadarPoint {
+class RandomRadarPointForAirplane {
     
     var x: CGFloat = 0
     var y: CGFloat = 0
@@ -16,15 +16,17 @@ class RandomRadarPoint {
     private var radarRadius: CGFloat
     private var numberOfCircles: Int
     private var airplaneWidth: CGFloat
+    private var airplaneIndent: CGFloat
     
     private lazy var minRadius: CGFloat = {
        return radarRadius / CGFloat(numberOfCircles)
     }()
     
-    init(radarCenter: CGPoint, radarRadius: CGFloat, numberOfCircles: Int, airplaneWidth: CGFloat) {
+    init(radarCenter: CGPoint, radarRadius: CGFloat, numberOfCircles: Int, airplaneWidth: CGFloat, airplaneIndent: CGFloat) {
         self.radarRadius = radarRadius
         self.numberOfCircles = numberOfCircles
         self.airplaneWidth = airplaneWidth
+        self.airplaneIndent = airplaneIndent
         let randomPoint = getPointOnCircle(center: radarCenter, radius: getRandomRadius(), angle: getRandomAngle())
         self.x = randomPoint.x
         self.y = randomPoint.y
@@ -63,8 +65,8 @@ class RandomRadarPoint {
         let lessCircleRadius = (radius / minRadius).rounded(.towardZero) * minRadius
         let greaterCircleRadius = (radius / minRadius).rounded(.awayFromZero) * minRadius
         
-        if (lessCircleRadius <= radius - airplaneWidth/2 - Constants.airplaneIndent) &&
-            (greaterCircleRadius >= radius + airplaneWidth/2 + Constants.airplaneIndent) {
+        if (lessCircleRadius <= radius - airplaneWidth/2 - airplaneIndent) &&
+            (greaterCircleRadius >= radius + airplaneWidth/2 + airplaneIndent) {
             return true
         } else {
             return false

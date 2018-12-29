@@ -11,7 +11,7 @@ import UIKit
 struct Constants {
     
     static let numberOfCircles: Int = 10
-    static let numberOfAirplanes: Int = 100
+    static let numberOfAirplanes: Int = 50
     
     static let airplaneIndent: CGFloat = 1
     

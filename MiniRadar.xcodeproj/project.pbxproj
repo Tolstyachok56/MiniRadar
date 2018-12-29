@@ -14,7 +14,7 @@
 		04C7A9A021D362A0001FDE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C7A99E21D362A0001FDE49 /* LaunchScreen.storyboard */; };
 		04C7A9AD21D364D3001FDE49 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9AC21D364D3001FDE49 /* RadarView.swift */; };
 		04C7A9B021D36511001FDE49 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9AF21D36511001FDE49 /* Constants.swift */; };
-		04C7A9B221D4D4EB001FDE49 /* RandomRadarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9B121D4D4EB001FDE49 /* RandomRadarPoint.swift */; };
+		04C7A9B221D4D4EB001FDE49 /* RandomRadarPointForAirplane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7A9B121D4D4EB001FDE49 /* RandomRadarPointForAirplane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		04C7A9A121D362A0001FDE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C7A9AC21D364D3001FDE49 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
 		04C7A9AF21D36511001FDE49 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		04C7A9B121D4D4EB001FDE49 /* RandomRadarPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRadarPoint.swift; sourceTree = "<group>"; };
+		04C7A9B121D4D4EB001FDE49 /* RandomRadarPointForAirplane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRadarPointForAirplane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				04C7A9AF21D36511001FDE49 /* Constants.swift */,
-				04C7A9B121D4D4EB001FDE49 /* RandomRadarPoint.swift */,
+				04C7A9B121D4D4EB001FDE49 /* RandomRadarPointForAirplane.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C7A9B221D4D4EB001FDE49 /* RandomRadarPoint.swift in Sources */,
+				04C7A9B221D4D4EB001FDE49 /* RandomRadarPointForAirplane.swift in Sources */,
 				04C7A99821D3629E001FDE49 /* ViewController.swift in Sources */,
 				04C7A9AD21D364D3001FDE49 /* RadarView.swift in Sources */,
 				04C7A99621D3629E001FDE49 /* AppDelegate.swift in Sources */,
